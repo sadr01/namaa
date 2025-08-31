@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-gradient {
+  background: #fc00ff;
+  background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+}

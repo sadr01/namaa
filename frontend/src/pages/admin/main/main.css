@@ -1,0 +1,6 @@
+.main {
+  flex-grow: 1;
+  height: 100%;
+  padding: 1rem;
+  overflow-x: auto;
+}

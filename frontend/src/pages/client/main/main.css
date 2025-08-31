@@ -1,0 +1,102 @@
+.top-row-manager {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+/* form */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .form-box {
+    width: 30rem;
+    align-items: stretch;
+  }
+}
+
+.row-form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 1rem;
+}
+
+.error-caption-box {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  border-radius: 3px;
+}
+
+.error-caption-box * {
+  color: rgb(255, 251, 150) !important;
+
+}
+
+.btn {
+  border: 1px solid #fff !important;
+  border-radius: 2rem !important;
+}
+
+.input {
+  flex-grow: 1;
+}
+
+.input .MuiOutlinedInput-root {
+  border-radius: 2rem 0.2rem 2rem 2rem;
+
+}
+
+/* icon box */
+.icons-wrapper {
+  border: 1px solid #fff;
+  border-radius: 2rem 0.2rem 2rem 2rem;
+  overflow: hidden;
+}
+
+.icons-wrapper>div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.icons-wrapper>div::-webkit-scrollbar {
+  height: 8px;
+  background-color: #ffffff27;
+  border-radius: 5px;
+}
+
+.icons-wrapper>div::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.icons-wrapper>div>button {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: white;
+  flex: 0 0 auto;
+  transition: 0.2s;
+  background: none;
+  cursor: pointer;
+}
+
+.icons-wrapper>div>button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icons-wrapper>div>button.selected {
+  border: 2px solid white;
+}
+
+/* //// */
