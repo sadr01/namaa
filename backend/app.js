@@ -3,7 +3,6 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import cookieParser from "cookie-parser";
 import path from "path";
-import dotenv from 'dotenv';
 import passport from "passport";
 import "./src/utils/passport.js";
 
@@ -14,7 +13,6 @@ import appRoute from './src/modules/apps/router.js';
 import socialRoute from './src/modules/socials/router.js';
 import iconRoute from './src/modules/icons/router.js';
 
-dotenv.config({ path: './.env', quiet: true });
 
 export const app = express();
 

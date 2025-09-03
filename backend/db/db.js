@@ -1,6 +1,4 @@
 import mysql from "mysql2/promise"
-import dotenv from 'dotenv'
-dotenv.config({ path: './.env', quiet: true });
 
 export const pool = mysql.createPool({
   uri: process.env.DB_URI || "mysql://root:@localhost:3306/namaa",

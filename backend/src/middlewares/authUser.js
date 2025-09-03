@@ -1,8 +1,6 @@
 import jwt from 'jsonwebtoken';
 import userQueries from '../modules/auth/queries.js';
 import sendError from '../utils/sendError.js';
-import dotenv from 'dotenv';
-dotenv.config({ path: './.env', quiet: true });
 
 const authToken = async (req, res, next) => {
   try {

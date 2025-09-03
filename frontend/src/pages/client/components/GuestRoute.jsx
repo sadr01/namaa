@@ -11,6 +11,7 @@ const GuestRoute = ({ children }) => {
   useEffect(() => {
     setLoading(loading);
   }, [loading])
+  console.log({ user });
 
   if (loading) return null;
   return children;

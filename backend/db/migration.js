@@ -4,18 +4,6 @@ import { tablesQueries } from "./createTablesQueries.js"
 
 export const migration = async () => {
   try {
-    const connection = await mysql.createConnection({
-      host: "localhost",
-      user: "root",
-      password: "",
-    });
-    await connection.query(`CREATE DATABASE IF NOT EXISTS namaa
-    CHARACTER SET utf8mb4
-    COLLATE utf8mb4_persian_ci;`)
-    console.log("Create Datebase!");
-
-    await connection.end();
-
     for (const qry of tablesQueries) {
       try {
         await query(qry.query);
@@ -30,4 +18,4 @@ export const migration = async () => {
   }
 };
 
-migration()
+migration();

@@ -12,7 +12,7 @@ export default function ProtectedRoute({ children, access }) {
 
   }, [loading])
 
-  if (loading) return null;
+  if (loading) setLoading(true);
 
   if (!user) {
     return <Navigate to="/login" replace />;

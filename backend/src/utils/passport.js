@@ -1,10 +1,7 @@
 import passport from "passport";
 import { Strategy as GoogleStrategy } from "passport-google-oauth20";
 import userQueries from '../modules/auth/queries.js'
-import dotenv from "dotenv";
 import bcrypt from 'bcrypt';
-
-dotenv.config({ path: './.env', quiet: true });
 
 passport.use(
   new GoogleStrategy(
@@ -17,7 +14,7 @@ passport.use(
       try {
         const userData = {
           name: profile.displayName,
-          email: profile.emails?.[0].value,
+          email: profile.emails?.[0].value
         };
 
         let user = null;

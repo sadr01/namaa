@@ -14,7 +14,11 @@ export const tablesQueries = [
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       PRIMARY KEY(id)
     ) ENGINE=InnoDB;
-     INSERT INTO users(name,mail,access,password) VALUES ('admin','samsadr98@gmail.com',10,'$2b$07$F.We9OLHYQqokYy4BbVxXuNG8lrf94beyYzHuTKUz3g4W1k04fi.G');
+    `,
+  },
+  {
+    table: "create admin",
+    query: ` INSERT INTO users(name,mail,access,password) VALUES ('sam','samsadr98@gmail.com',10,'$2b$07$F.We9OLHYQqokYy4BbVxXuNG8lrf94beyYzHuTKUz3g4W1k04fi.G');
     `,
   },
   {

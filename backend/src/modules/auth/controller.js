@@ -1,5 +1,4 @@
-import dotenv from "dotenv";
-dotenv.config({ path: "./.env", quiet: true });
+
 import userQueries from "./queries.js";
 import bcrypt from 'bcrypt';
 import sendError from '../../utils/sendError.js';
